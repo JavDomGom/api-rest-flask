@@ -2,9 +2,9 @@ import bcrypt
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import create_access_token, get_jwt_identity, jwt_required  # noqa: E501
 
-from app.schema.schemas import pelicula_schema, peliculas_schema
-from app.database import db
-from app.models.models import Usuario, Pelicula
+from database import db
+from models.models import Usuario, Pelicula
+from schema.schemas import pelicula_schema, peliculas_schema
 
 blue_print = Blueprint('app', __name__)
 
@@ -103,7 +103,7 @@ def crear_pelicula():
         db.session.add(nueva_pelicula)
         db.session.commit()
 
-        return jsonify(respuesta='Película almacenada cn éxito'), 201
+        return jsonify(respuesta='Película almacenada con éxito'), 201
     except Exception:
         return jsonify(respuesta='Error en petición'), 500
 

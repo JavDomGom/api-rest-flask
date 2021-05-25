@@ -10,7 +10,7 @@ class UsuarioSchema(ma.Schema):
 
 class PeliculaSchema(ma.Schema):
     class Meta:
-        fileds = (
+        fields = (
             'id', 'nombre', 'estreno', 'director',
             'reparto', 'genero', 'sinopsis'
         )
