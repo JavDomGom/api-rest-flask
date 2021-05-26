@@ -328,4 +328,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # Local files
-app/settings.py
+docker-compose.yml
