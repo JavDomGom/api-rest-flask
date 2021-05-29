@@ -295,7 +295,6 @@ tags
 
 ### VisualStudioCode ###
 .vscode/*
-*.code-workspace
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files

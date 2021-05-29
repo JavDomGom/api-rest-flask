@@ -1,9 +1,12 @@
+build-base
 gcc
 libc-dev
 make
 git
+musl-dev
+python3-dev
 libffi-dev
 openssl-dev
-python3-dev
+cargo
 libxml2-dev
 libxslt-dev
